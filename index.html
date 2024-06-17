@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty API</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-custom">
+    <div class="container mt-5">
+        <h1 class="my-4 text-white">Busca tu personaje de Rick and Morty!</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="characterName" class="form-control" placeholder="Nombre del personaje" aria-label="Nombre del personaje">
+            <button id="btnBuscar" class="btn btn-primary">Busca el Personaje</button>
+        </div>
+        <div id="characterInfo" class="d-none">
+            <h2 id="characterNameDisplay" class="my-4 text-white"></h2>
+            <img id="characterImage" src="" alt="Imagen del personaje" class="img-fluid">
+        </div>
+    </div>
+    <script type="module" src="js/controller.js"></script>
+</body>
+</html>
